@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #5D688A;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.image, 
+.name {
+    flex: 1;
+    text-align: center;
+    margin: 5%;
+    padding: 50px;
+}
+
+.image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: bold;
+    color: #F7A5A5;
+    text-transform: uppercase;
+}
+
+.about {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5%;
+    color: palevioletred;
+    text-align: justify;
+}
+
+.about h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.skills {
+    margin-bottom: 20px;
+    padding: 30px;
+    text-align: center;
+    color: #FFDBB6;
+}
+
+.skills h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills .skill-btn {
+    display: inline-block;
+    background-color: lightskyblue;
+    color: #48A6A7;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.skills .skill-btn:hover {
+    background-color: crimson;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: indigo;
+    text-decoration: none;
+}
+
+.icon a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.icon a:hover {
+    color: deepskyblue;
+}
+
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+    }
+
+    .image, 
+    .name {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .skills .skill-btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+

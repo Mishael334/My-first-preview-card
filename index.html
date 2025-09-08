@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neon Runner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo"></div>
+        <h1>Neon Runner</h1>
+      </div>
+      <div class="hud">
+        <div class="stat" id="score">Score: 0</div>
+        <div class="stat" id="best">Best: 0</div>
+      </div>
+      <div class="controls">
+        <button id="pauseBtn">Pause</button>
+        <button id="restartBtn" class="warn">Restart</button>
+        <button id="helpBtn" class="primary">Help</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="stage" id="stage">
+        <canvas id="game" width="1600" height="900"></canvas>
+        <div class="overlay" id="startOverlay">
+          <div class="card">
+            <h2>Dash. Jump. Survive.</h2>
+            <div class="tips">Press <b>Space</b> / <b>Up</b> or tap <b>Jump</b> to start.</div>
+            <button id="startBtn" class="primary">Start Game</button>
+          </div>
+        </div>
+        <div class="overlay" id="gameOverOverlay" style="display:none">
+          <div class="card">
+            <h2>Game Over</h2>
+            <div class="tips"><span id="finalScore">0</span> pts · Best <span id="finalBest">0</span></div>
+            <button id="retryBtn" class="primary">Restart</button>
+            <button id="shareBtn">Share my Score</button>
+          </div>
+        </div>
+        <div class="mobile-keys">
+          <button id="jumpBtn" class="primary">Jump</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      Built with ♥ using HTML5 Canvas & JavaScript
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

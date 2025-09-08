@@ -1,0 +1,21 @@
+* table {
+    width: auto;
+    border-collapse: collapse;
+}
+
+.th td {
+    padding: 10px;
+    border: 1px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+

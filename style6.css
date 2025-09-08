@@ -1,0 +1,22 @@
+*
+body {
+    background-color: antiquewhite;
+}
+
+img {
+    display:inline-block;
+    vertical-align: text-top;
+    margin-top: 30%;
+    margin-left: 10%;
+}
+
+code h1 {
+    color: darkgrey;
+    font-size: 200%;
+    display: inline-block;
+}
+
+
+
+
+
